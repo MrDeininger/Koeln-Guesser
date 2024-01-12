@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/koeln-guesser/static/css/main.f9ff187d.css",
+    "main.js": "/koeln-guesser/static/js/main.843189c6.js",
+    "static/media/OIG.jpg": "/koeln-guesser/static/media/OIG.522cb7e565cda367236d.jpg",
+    "index.html": "/koeln-guesser/index.html",
+    "main.f9ff187d.css.map": "/koeln-guesser/static/css/main.f9ff187d.css.map",
+    "main.843189c6.js.map": "/koeln-guesser/static/js/main.843189c6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9ff187d.css",
+    "static/js/main.843189c6.js"
+  ]
+}
