@@ -1,0 +1,20 @@
+#containerhome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/OIG.jpg");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    background-color: #c9d5cb;
+}
+
+#startbutton{
+    color:beige;
+    background-color: black;
+    bottom: 0;
+}

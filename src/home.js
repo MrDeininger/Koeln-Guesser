@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './home.css';
+import './css/home.css';
+import NameInput from './components/nameInput';
 
 function Home() {
     return (
-        <div className='containerhome'>
-            <h1>Köln Guessr</h1>
-            <Link to="/game" className="btn btn-primary" id='startbutton'>Start</Link>
+        <div id='containerhome'>
+            <h1>Köln Guesser</h1>
+            <NameInput />
+            <Link to="/game" className="btn btn-primary" id='startbutton'>Starte Spiel</Link>
         </div>
     );
 }

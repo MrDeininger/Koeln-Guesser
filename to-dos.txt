@@ -1,0 +1,7 @@
+ToDo:
+    -Info Seite mit Api-Abfrage
+    -marker-icon für die Karte
+    -Style home.css
+    -icon und titel setzen
+    -axios für api abfragen
+    -localStorage für die Highscore
