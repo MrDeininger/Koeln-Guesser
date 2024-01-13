@@ -16,8 +16,8 @@ function Home() {
             <NameInput />
             { gameInfo && gameInfo.name ? <p id='name'>Hallo {gameInfo.name}!</p> : '' }
 
-            <Link to="/koeln-guesser/game" className="btn btn-primary" id='startbutton'>Starte Spiel</Link>
-            <Link to="/koeln-guesser/info" className="btn btn-primary" id='infobutton'>Info</Link>
+            <Link to="/game" className="btn btn-primary" id='startbutton'>Starte Spiel</Link>
+            <Link to="/info" className="btn btn-primary" id='infobutton'>Info</Link>
         </div>
     );
 }

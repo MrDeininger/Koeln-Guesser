@@ -23,7 +23,7 @@ function App() {
     <MapCoordinatesContext.Provider value={{coordinates, setCoordinates}}>
     <ImageContext.Provider value={{ imageInfo, setImageInfo }}>
       
-      <Router basename={"/"}>
+      <Router basename={"/Koeln-Guesser"}>
         <Routes>
           <Route exact path="/" Component={Home} />
           <Route exact path="/home" Component={Home} />

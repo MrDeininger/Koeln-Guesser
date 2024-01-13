@@ -44,7 +44,7 @@ function Info() {
         >
           neuer Witz
         </button>
-        <Link to="/koeln-guesser/home" id="homebutton" className="btn btn-primary">
+        <Link to="/home" id="homebutton" className="btn btn-primary">
           Home
         </Link>
       </div>
