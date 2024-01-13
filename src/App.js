@@ -23,12 +23,12 @@ function App() {
     <MapCoordinatesContext.Provider value={{coordinates, setCoordinates}}>
     <ImageContext.Provider value={{ imageInfo, setImageInfo }}>
       
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename={"/koeln-guesser"}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/game" element={<Game />} />
-          <Route path="/info" element={<Info />} />
+          <Route exact path="/koeln-guesser" Component={Home} />
+          <Route path="/home" Component={Home} />
+          <Route path="/game" Component={Game} />
+          <Route path="/info" Component={Info} />
         </Routes>
       </Router>
 
