@@ -23,9 +23,9 @@ function App() {
     <MapCoordinatesContext.Provider value={{coordinates, setCoordinates}}>
     <ImageContext.Provider value={{ imageInfo, setImageInfo }}>
       
-      <Router basename={"/Koeln-Guesser"}>
+      <Router basename={"/"}>
         <Routes>
-          <Route exact path="/" Component={Home} />
+          <Route exact path="/Koeln-Guesser" Component={Home} />
           <Route exact path="/home" Component={Home} />
           <Route path="/game" Component={Game} />
           <Route path="/info" Component={Info} />
