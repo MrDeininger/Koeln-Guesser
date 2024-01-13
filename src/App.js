@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './home';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';import Home from './home';
 import Game from './game';
 import Info from './info';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,10 +24,10 @@ function App() {
     <ImageContext.Provider value={{ imageInfo, setImageInfo }}>
       <Router>
         <Routes>
-          <Route path="/koeln-guesser/" element={<Home />} />
-          <Route path="/koeln-guesser/home" element={<Home />} />
-          <Route path="/koeln-guesser/game" element={<Game />} />
-          <Route path="/koeln-guesser/info" element={<Info />} />
+          <Route path={process.env.PUBLIC_URL + '/'} element={<Home />} />
+          <Route path={process.env.PUBLIC_URL + '/home'} element={<Home />} />
+          <Route path={process.env.PUBLIC_URL + '/game'} element={<Game />} />
+          <Route path={process.env.PUBLIC_URL + '/info'} element={<Info />} />
         </Routes>
       </Router>
 
