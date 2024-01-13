@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/koeln-guesser/static/css/main.34de7c5e.css",
-    "main.js": "/koeln-guesser/static/js/main.15b5c639.js",
-    "static/media/OIG.jpg": "/koeln-guesser/static/media/OIG.522cb7e565cda367236d.jpg",
-    "index.html": "/koeln-guesser/index.html",
-    "main.34de7c5e.css.map": "/koeln-guesser/static/css/main.34de7c5e.css.map",
-    "main.15b5c639.js.map": "/koeln-guesser/static/js/main.15b5c639.js.map"
+    "main.css": "/Koeln-Guesser/static/css/main.629ba60a.css",
+    "main.js": "/Koeln-Guesser/static/js/main.a896cb02.js",
+    "static/media/OIG.jpg": "/Koeln-Guesser/static/media/OIG.522cb7e565cda367236d.jpg",
+    "index.html": "/Koeln-Guesser/index.html",
+    "main.629ba60a.css.map": "/Koeln-Guesser/static/css/main.629ba60a.css.map",
+    "main.a896cb02.js.map": "/Koeln-Guesser/static/js/main.a896cb02.js.map"
   },
   "entrypoints": [
-    "static/css/main.34de7c5e.css",
-    "static/js/main.15b5c639.js"
+    "static/css/main.629ba60a.css",
+    "static/js/main.a896cb02.js"
   ]
 }
