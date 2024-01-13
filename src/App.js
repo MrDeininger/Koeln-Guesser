@@ -22,12 +22,13 @@ function App() {
     <GameInfoContext.Provider value={{gameInfo, setGameInfo}}>
     <MapCoordinatesContext.Provider value={{coordinates, setCoordinates}}>
     <ImageContext.Provider value={{ imageInfo, setImageInfo }}>
-      <Router>
+      
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route path={process.env.PUBLIC_URL + '/'} element={<Home />} />
-          <Route path={process.env.PUBLIC_URL + '/home'} element={<Home />} />
-          <Route path={process.env.PUBLIC_URL + '/game'} element={<Game />} />
-          <Route path={process.env.PUBLIC_URL + '/info'} element={<Info />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/game" element={<Game />} />
+          <Route path="/info" element={<Info />} />
         </Routes>
       </Router>
 
