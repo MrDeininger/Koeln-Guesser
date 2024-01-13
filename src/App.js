@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';import Home from './home';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';import Home from './home';
 import Game from './game';
 import Info from './info';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,7 +25,7 @@ function App() {
       
       <Router basename={"/koeln-guesser"}>
         <Routes>
-          <Route exact path="/koeln-guesser" Component={Home} />
+          <Route exact path="/" Component={Home} />
           <Route path="/home" Component={Home} />
           <Route path="/game" Component={Game} />
           <Route path="/info" Component={Info} />
