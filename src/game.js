@@ -54,7 +54,7 @@ function Game() {
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 {coordinates ? <SubmitGuessButton /> : ''}
                 <ResetGameButton resetGame={resetGame} />
-                <Link to='/home' className='btn btn-primary' onClick={resetGame}>Home</Link>
+                <Link to='/koeln-guesser/home' className='btn btn-primary' id='backtohomebutton' onClick={resetGame}>Home</Link>
             </div>
             <OpenStreetCam reset={reset} />
         </div>

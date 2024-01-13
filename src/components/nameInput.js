@@ -16,7 +16,8 @@ const NameInput = () => {
     return (
         <input
             type="text"
-            placeholder="Hier Namen eingeben"
+            id='nameinput'
+            placeholder={"Hier Namen eingeben"}
             onChange={handleChange}
         />
     );

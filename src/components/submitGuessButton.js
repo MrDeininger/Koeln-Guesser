@@ -11,7 +11,6 @@ function EinloggenButton() {
     <div className="containerhome">
       <button
         onClick={() => {
-          console.log("Einloggen");
           if (gameInfo && imageInfo) {
             if (!gameInfo.eingeloggt) {
               setGameInfo({

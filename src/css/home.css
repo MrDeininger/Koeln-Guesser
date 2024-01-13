@@ -1,20 +1,79 @@
 #containerhome {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: flex-start;
     width: 100%;
     height: 100vh;
     background-image: url("../img/OIG.jpg");
     background-size: auto 100%;
-    background-position: center;
+    background-position: 40svw;
     background-repeat: no-repeat;
     color: black;
     background-color: #c9d5cb;
+    padding: 5%;
 }
 
 #startbutton{
     color:beige;
     background-color: black;
-    bottom: 0;
+    border: none;
+    width: 15vw;
+    transform: translateY(20vh);
+    height: 10vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
 }
+#startbutton:hover{
+    color: black;
+    background-color: beige;
+    border: none;
+    width: 20vw;
+}
+#infobutton{
+    color:beige;
+    background-color: black;
+    border: none;
+    width: 15vw;
+    transform: translateY(25vh);
+    height: 10vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+        
+}
+#infobutton:hover{
+    color: black;
+    background-color: beige;
+    border: none;
+    width: 20vw;
+}
+
+#nameinput{
+    margin-left: 1%;
+    background-color: transparent;
+    text-align: left;
+    font-size: 2em;
+    border: none;
+    width: 35vw;
+    transform: translateY(10vh);
+    transition: all 0.25s ease-in-out;
+    padding-left: 2px;
+}
+#nameinput:focus{
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+#nameinput:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+#nameinput::placeholder{
+    color: black;
+}
+
+

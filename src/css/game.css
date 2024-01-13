@@ -10,10 +10,46 @@
     background-color: black;
 }
 
-.btn{
-    margin: 10px;
-}
+#einloggenbutton{
+    padding: 2vh;
+    background-color: #c9d5cb;
+    border: none;
+    color: black;
+    margin: 1vh;
+    width: 10vw;
 
+
+}
+#einloggenbutton:hover{
+    background-color: #1c1f1b;
+    color: #c9d5cb;
+}
+#resetGameButton{
+    padding: 2vh;
+    background-color: #c9d5cb;
+    border: none;
+    color: black;
+    margin: 1vh;
+    width: 10vw;
+
+}
+#resetGameButton:hover{
+    background-color: #1c1f1b;
+    color: #c9d5cb;
+}
+#backtohomebutton{
+    padding: 2vh;
+    background-color: #c9d5cb;
+    border: none;
+    color: black;
+    margin: 1vh;
+    width: 10vw;
+
+}
+#backtohomebutton:hover{
+    background-color: #1c1f1b;
+    color: #c9d5cb;
+}
 
 #imageContainer{
     width: 100%;

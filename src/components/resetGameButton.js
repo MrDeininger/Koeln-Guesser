@@ -6,7 +6,7 @@ const ResetGameButton = ({ resetGame }) => {
     };
 
     return (
-        <button onClick={handleReset} className='btn btn-secondary'>
+        <button onClick={handleReset} className='btn btn-secondary' id='resetGameButton'>
             Neuer Versuch
         </button>
     );

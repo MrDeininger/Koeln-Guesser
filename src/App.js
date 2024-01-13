@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './home';
 import Game from './game';
+import Info from './info';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import ImageContext from './contexts/imageContext';
@@ -24,9 +25,10 @@ function App() {
     <ImageContext.Provider value={{ imageInfo, setImageInfo }}>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/game" element={<Game />} />
+          <Route path="/koeln-guesser/" element={<Home />} />
+          <Route path="/koeln-guesser/home" element={<Home />} />
+          <Route path="/koeln-guesser/game" element={<Game />} />
+          <Route path="/koeln-guesser/info" element={<Info />} />
         </Routes>
       </Router>
 
