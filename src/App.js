@@ -25,7 +25,7 @@ function App() {
       
       <Router basename={"/"}>
         <Routes>
-          <Route exact path="/Koeln-Guesser" Component={Home} />
+          <Route path="/" Component={Home} />
           <Route exact path="/home" Component={Home} />
           <Route path="/game" Component={Game} />
           <Route path="/info" Component={Info} />
