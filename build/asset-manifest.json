@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Koeln-Guesser/static/css/main.629ba60a.css",
-    "main.js": "/Koeln-Guesser/static/js/main.a36de727.js",
-    "static/media/OIG.jpg": "/Koeln-Guesser/static/media/OIG.522cb7e565cda367236d.jpg",
-    "index.html": "/Koeln-Guesser/index.html",
-    "main.629ba60a.css.map": "/Koeln-Guesser/static/css/main.629ba60a.css.map",
-    "main.a36de727.js.map": "/Koeln-Guesser/static/js/main.a36de727.js.map"
+    "main.css": "/static/css/main.79ce3e78.css",
+    "main.js": "/static/js/main.8001cdc2.js",
+    "static/media/OIG.jpg": "/static/media/OIG.522cb7e565cda367236d.jpg",
+    "index.html": "/index.html",
+    "main.79ce3e78.css.map": "/static/css/main.79ce3e78.css.map",
+    "main.8001cdc2.js.map": "/static/js/main.8001cdc2.js.map"
   },
   "entrypoints": [
-    "static/css/main.629ba60a.css",
-    "static/js/main.a36de727.js"
+    "static/css/main.79ce3e78.css",
+    "static/js/main.8001cdc2.js"
   ]
 }

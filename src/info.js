@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import ScoreDisplay from "./components/ScoreDisplay";
+
 
 import "./css/info.css";
 
@@ -47,6 +49,7 @@ function Info() {
         <Link to="/home" id="homebutton" className="btn btn-primary">
           Home
         </Link>
+        <ScoreDisplay />
       </div>
     </div>
   );

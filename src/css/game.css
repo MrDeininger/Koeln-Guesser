@@ -79,6 +79,7 @@
     height: 30%;
     width: 20%;
     transition: all 0.4s ease-in-out;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 .leaflet-container:hover {
     height: 80%;

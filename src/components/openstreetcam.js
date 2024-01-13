@@ -2,16 +2,17 @@ import { useContext, useEffect } from "react";
 import ImageContext from "../contexts/imageContext";
 import ScoreContext from "../contexts/scoreContext";
 
+
 function OpenStreetCam({ reset }) {
   const { imageInfo, setImageInfo } = useContext(ImageContext);
   const { scoreInfo } = useContext(ScoreContext);
 
   const getRandomCoordinates = () => {
     // Define the latitude and longitude boundaries of the rectangle
-    const latMin = 50.91;
-    const latMax = 50.96;
-    const lngMin = 6.9516;
-    const lngMax = 7.05372;
+    const latMin = 50.89588741;
+    const latMax = 50.99128564;
+    const lngMin = 6.87332153;
+    const lngMax = 7.02060699;
 
     // Generate a random latitude and longitude within the rectangle
     const lat = Math.random() * (latMax - latMin) + latMin;
@@ -32,7 +33,6 @@ function OpenStreetCam({ reset }) {
       .then((data) => {
         if (data.result) {
           let numberOfImages = data.result.data.length;
-          console.log(`Found ${numberOfImages} images.`);
           if (numberOfImages > 0) {
             const randomIndex = Math.floor(
               Math.random() * (numberOfImages - 1)
@@ -44,6 +44,9 @@ function OpenStreetCam({ reset }) {
               randomPhoto.lng,
             ]);
           }
+        }
+        else {
+          fetchImageUrl();
         }
       })
       .catch((error) => {

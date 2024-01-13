@@ -46,10 +46,9 @@ function Game() {
     
     return (
         <div className='gameContainer'>
-            <h1>KölnGuesser</h1>
             <MapComponent />
             <ScoreDisplay />
-            <ImageDisplay />
+            <ImageDisplay reset={resetGame}/>
 
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 {coordinates ? <SubmitGuessButton /> : ''}

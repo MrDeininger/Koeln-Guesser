@@ -1,0 +1,37 @@
+#scoreContainer {
+    overflow-y: scroll;
+    transition: all 0.4s ease-in-out;
+    overflow-y: scroll;
+    height: 45vh;
+    justify-content: center;
+    backdrop-filter: blur(5px); /* Add this line to apply the blur effect */
+    
+}
+#scoreWindow {
+    background-color: #c9d5cbaa;
+    transform: translateY(-35vh);
+    backdrop-filter: blur(5px); /* Add this line to apply the blur effect */
+    z-index: 1;
+    position: absolute;
+    width: 20vw;
+    height: 55vh;
+    border-radius: 10px;
+    bottom: 10px;
+    right: 10px;
+    align-items: center;
+    text-align: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    
+}
+#scoreEntry{
+    background-color: #101110aa;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    transition: all 0.4s ease-in-out;
+}
+#scoreEntry:hover{
+    background-color: #101110ff;
+}

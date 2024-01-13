@@ -3,6 +3,7 @@ import { useContext } from "react";
 
 import ScoreContext from "../contexts/scoreContext";
 import GameContext from "../contexts/gameContext";
+import "../css/highscores.css";
 
 function ScoreDisplay() {
   const { setScoreInfo, scoreInfo } = useContext(ScoreContext);
@@ -18,7 +19,6 @@ function ScoreDisplay() {
       if (!scoreInfo) {
         if (storedScoreInfo) {
           setScoreInfo(storedScoreInfo);
-          
         } else {
           setScoreInfo([
             {
@@ -29,8 +29,7 @@ function ScoreDisplay() {
             },
           ]);
         }
-      } 
-      else {
+      } else {
         const newScoreInfo = {
           Index: scoreInfo.length,
           distance: gameInfo.distance,
@@ -51,26 +50,7 @@ function ScoreDisplay() {
   };
 
   return isScoreVisible ? (
-    <div
-      id="scoreContainer"
-      style={{
-        position: "fixed",
-        top: "50%",
-        left: "50%",
-        width: "70%",
-        height: "70%",
-        textAlign: "center",
-        fontSize: "24px",
-        transform: "translate(-50%, -50%)",
-        zIndex: 1,
-        boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
-        backgroundColor: "black",
-        padding: "20px",
-        overflowY: "scroll",
-        border: "2px solid white",
-        borderRadius: "10px",
-      }}
-    >
+    <div id="scoreWindow">
       <button
         onClick={closeScoreInfo}
         style={{
@@ -86,25 +66,29 @@ function ScoreDisplay() {
         X
       </button>
 
-      <h1>Highscores</h1>
-      {scoreInfo ? (
-        [...scoreInfo]
-          .sort((a, b) => b.score - a.score)
-          .map((score, i, arr) => {
-            const maxIndex = Math.max(...arr.map((score) => score.Index));
-            return (
-              <p
-                key={i}
-                id="score"
-                style={{ color: score.Index === maxIndex ? "red" : "white" }}
-              >
-                {score.name}: {score.score}
-              </p>
-            );
-          })
-      ) : (
-        <p>Score Pending...</p>
-      )}
+      <h1 style={{color:"black"}}>Highscores</h1>
+      <div id="scoreContainer">
+        {scoreInfo ? (
+          [...scoreInfo]
+            .sort((a, b) => b.score - a.score)
+            .map((score, i, arr) => {
+              const maxIndex = Math.max(...arr.map((score) => score.Index));
+              return (
+                <p
+                  key={i}
+                  id="score"
+                  style={{ color: score.Index === maxIndex ? "red" : "white" }}
+                >
+                  <div id="scoreEntry">
+                   {i+1}. {!score.name ? "Anonym" : score.name}: {score.score}
+                  </div>
+                </p>
+              );
+            })
+        ) : (
+          <p>Score Pending...</p>
+        )}
+      </div>
     </div>
   ) : null;
 }
