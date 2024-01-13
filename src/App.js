@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';import Home from './home';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';import Home from './home';
 import Game from './game';
 import Info from './info';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,7 +23,7 @@ function App() {
     <MapCoordinatesContext.Provider value={{coordinates, setCoordinates}}>
     <ImageContext.Provider value={{ imageInfo, setImageInfo }}>
       
-      <Router basename={"/koeln-guesser"}>
+      <Router basename={"/"}>
         <Routes>
           <Route exact path="/" Component={Home} />
           <Route path="/home" Component={Home} />
