@@ -11,7 +11,6 @@ function ImageDisplay( { reset } ) {
                 <img 
                     id='image' 
                     src={imageInfo[0]} 
-                    alt='Fetching failed: Reload' 
                     onLoad={() => console.log('Image loaded successfully')}
                     onError={() => {
                         console.log('Image loading failed. Trying again...');

@@ -1,0 +1,19 @@
+.homebutton{
+    color:beige;
+    background-color: black;
+    border: none;
+    width: 15vw;
+    transform: translateY(20vh);
+    height: 10vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+    border-radius: 10px;
+}
+.homebutton:hover{
+    color: black;
+    background-color: beige;
+    border: none;
+    width: 20vw;
+}

@@ -4,6 +4,7 @@ import './css/home.css';
 import NameInput from './components/nameInput';
 import { useContext } from 'react';
 import GameContext from './contexts/gameContext';
+import ScoreDisplay from './components/ScoreDisplay';
 
 function Home() {
 
@@ -18,6 +19,7 @@ function Home() {
 
             <Link to="/game" className="btn btn-primary" id='startbutton'>Starte Spiel</Link>
             <Link to="/info" className="btn btn-primary" id='infobutton'>Info</Link>
+            <ScoreDisplay />
         </div>
     );
 }
